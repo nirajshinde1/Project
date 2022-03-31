@@ -1,7 +1,6 @@
 html{
-  font-size: 62.5;
+  font-size: 62.5%;
   box-sizing: border-box;
-  
 }
 body{
   margin: 0%;
@@ -10,10 +9,13 @@ body{
   font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 #root{
   height: 100%;
 }
+
+/* Layout */
 .grid-cotainer{
   display: grid;
   grid-template-areas: 
@@ -76,7 +78,7 @@ img{
   border-radius: 0.5rem;
 }
 img.medium{
-  max-width: 18rem;
+  max-width: 29rem;
   width: 100%;
 }
 
@@ -100,4 +102,7 @@ img.medium{
 .rating span{
   color: #f0c040;
   margin: 0.1rem;
+}
+.rating span:last-child{
+  color:#404044
 }
