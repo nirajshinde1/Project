@@ -5,9 +5,10 @@ import data from '../data';
 export default function ProductScreen(props)
 {
   const product = data.products.find((x) => x._id === props.match.params.id);
-    if (!product){
-      return <div>Product Not Found</div>};
-    return(
+   if (!product){
+        return <div>Product Not Found</div>;
+   } 
+    return (
       <div>
         <div className="row">
           <div className="col-2">
@@ -42,13 +43,13 @@ export default function ProductScreen(props)
                     <li>
                       <div className="row">
                         <div>Status</div>
-                        <div >{product.countInStock > 0 ?(
+                        <div >{product.countInStock> 0 ? (
                           <span className="success">In Stock</span>
                         ) : (
                           <span className="error">Unavailable</span>
                         )}
                       </div>
-                </div>
+                     </div>
                     </li>
                     <li>
                       <button className="primary block">Add to cart</button> 
@@ -60,3 +61,4 @@ export default function ProductScreen(props)
         </div>
     );
   }
+  
